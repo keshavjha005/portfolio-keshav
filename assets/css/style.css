@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
@@ -11,34 +12,23 @@
   text-transform: capitalize;
   transition: all 0.2s linear;
 }
+
 html {
-  font-size: 62.5%;
+  font-size: 52.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+/* Set up the viewport for responsiveness */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 45%; /* Reduce base font size for smaller screens */
+  }
+}
+
 body {
-  
   font-family: "Poppins", sans-serif;
   background-image: radial-gradient(circle, #645c60, #7b757a, #938f95, #acaab0, #c6c6cc, #cdd2da, #d2dee8, #d6ebf3, #c8ebeb, #c4eada, #cde5c4, #e1ddb0);
-}
-
-*::selection {
-  background: #2b3dda;
-  color: #fff;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-html::-webkit-scrollbar {
-  width: 0.8rem;
-}
-html::-webkit-scrollbar-track {
-  background: rgb(235, 202, 245);
-}
-html::-webkit-scrollbar-thumb {
-  background: #420177;
 }
 
 /* pre loader start */
@@ -59,6 +49,133 @@ html::-webkit-scrollbar-thumb {
 }
 /* pre loader end */
 
+/* dark mode */
+/* Add the initial (light mode) styles */
+body {
+  background-image: radial-gradient(circle, #b7a49f, #c3b0b1, #ccbdc2, #d4cbd3, #dcd9e1, #dbdee9, #d9e5f0, #d6ebf3, #c8ebeb, #c4eada, #cde5c4, #e1ddb0);
+
+  color: #333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+header {
+  background-color: #fff;
+  position: relative; /* Positioning added for better control */
+  padding: 1rem 2rem; /* Add padding for spacing */
+}
+
+header.dark-mode {
+  background-color: #333;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow the items to wrap on small screens */
+}
+
+header .navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .navbar ul li {
+  margin: 0 1.5rem;
+}
+
+header .navbar ul li a {
+  color: #0E2431;
+  font-size: 1.8rem;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: #011aff;
+  border-bottom: 0.2rem solid #011aff;
+}
+
+body.dark-mode header .navbar ul li a {
+  color: #f1f1f1;
+}
+
+body.dark-mode header .navbar ul li a.active,
+body.dark-mode header .navbar ul li a:hover {
+  color: #66c7ff;
+  border-bottom: .2rem solid #66c7ff;
+}
+
+#dark-mode-toggle {
+  cursor: pointer;
+  font-size: 3.4rem;
+  color: #333;
+  position: absolute;
+  top: o.5rem;
+  right: 2rem; /* Positioned to the top-right corner */
+}
+
+body.dark-mode #dark-mode-toggle {
+  color: #f1f1f1;
+}
+
+/* Mobile-friendly changes */
+@media screen and (max-width: 768px) {
+  body {
+     background-image: radial-gradient(circle, #b7a49f, #c3b0b1, #ccbdc2, #d4cbd3, #dcd9e1, #dbdee9, #d9e5f0, #d6ebf3, #c8ebeb, #c4eada, #cde5c4, #e1ddb0);
+
+    font-size: 1.4rem; /* Adjust font size for mobile */
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  header .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: center; /* Center navbar items */
+    text-align: center;
+  }
+
+  header .navbar ul {
+    display: block; /* Stack navbar links vertically */
+    padding-top: 1rem;
+  }
+
+  header .navbar ul li {
+    margin: 1rem 0;
+  }
+
+  header .navbar ul li a {
+    font-size: 1.6rem;
+    padding: 0..5rem 0; /* Add padding to make clickable areas larger */
+  }
+
+  #dark-mode-toggle {
+    font-size: 3.5rem;
+    top: 1rem; /* Ensure toggle doesn't overlap with navbar */
+    right: 4rem; /* Adjust position for small screens */
+  }
+}
+
+/* Make the scrollbar thinner and mobile-friendly */
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(235, 202, 245);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #420177;
+}
+
 /* navbar starts */
 header {
   position: fixed;
@@ -75,40 +192,49 @@ header {
   background-image: radial-gradient(circle, #b7a49f, #c3b0b1, #ccbdc2, #d4cbd3, #dcd9e1, #dbdee9, #d9e5f0, #d6ebf3, #c8ebeb, #c4eada, #cde5c4, #e1ddb0);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
+
 section {
   min-height: 100vh;
   padding: 2rem 9%;
 }
+
 .heading {
   font-size: 3.5rem;
   color: rgb(32, 32, 32);
   font-weight: 800;
   text-align: center;
 }
+
 .heading span {
   color: rgb(115, 3, 167);
 }
+
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
   color: #2b5066;
 }
+
 header .logo i {
   font-size: 2.2rem;
 }
+
 header .logo:hover {
   color: #fc8c05;
 }
+
 header .navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 header .navbar li {
   margin-left: 2.5rem;
 }
+
 header .navbar ul li a {
   font-size: 1.57rem;
   color: #2004f2;
@@ -117,13 +243,55 @@ header .navbar ul li a {
   letter-spacing: 0.04rem;
   transition: 0.2s;
 }
+
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
   color: #0515f5;
   border-bottom: 0.2rem solid #7c82b9;
   padding: 0.5rem 0;
 }
-/* navbar ends */
+/* Add media query for mobile devices */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem 5%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  header .logo {
+    font-size: 2.4rem;
+  }
+
+  header .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .navbar li {
+    margin: 1rem 0;
+  }
+
+  #dark-mode-toggle {
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+  }
+
+  header .navbar ul li:last-child {
+    margin-top: 4rem;
+  }
+  
+  /* Add dark mode toggle to navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+
 
 /* hamburger icon starts*/
 #menu {
@@ -162,13 +330,13 @@ header .navbar ul li a:hover {
     display: block;
     padding: 1rem;
     text-align: left;
-    color: #fff;
+    color: #3d0606;
     font-size: 2rem;
   }
   header .navbar ul li a.active,
   header .navbar ul li a:hover {
     padding: 1rem;
-    color: #fff;
+    color: #160101;
     border-radius: 0.7rem;
     border-bottom: 0.5rem solid #1326cc;
   }
@@ -207,7 +375,7 @@ header .navbar ul li a:hover {
 }
 .home .content {
   flex: 1 1 40rem;
-  padding-top: 1rem;
+  padding-top: 5rem;
   z-index: 1;
 }
 .home .image {

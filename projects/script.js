@@ -17,15 +17,49 @@ $(document).ready(function () {
     });
 });
 
+
+
+$(document).ready(function () {
+    // Toggle the dark mode on/off when the button is clicked
+    $('#dark-mode-toggle').click(function () {
+        $('body').toggleClass('dark-mode'); // Toggle the dark mode class on the body
+        
+        // Optionally, you can change the icon to match the mode
+        if ($('body').hasClass('dark-mode')) {
+            $(this).html('<i class="fas fa-sun"></i>'); // Sun icon for light mode
+        } else {
+            $(this).html('<i class="fas fa-moon"></i>'); // Moon icon for dark mode
+        }
+    });
+
+    // Toggle the navbar on click
+    $('#menu').click(function () {
+        $(this).toggleClass('fa-times');
+        $('.navbar').toggleClass('nav-toggle');
+    });
+
+    $(window).on('scroll load', function () {
+        $('#menu').removeClass('fa-times');
+        $('.navbar').removeClass('nav-toggle');
+
+        if (window.scrollY > 60) {
+            document.querySelector('#scroll-top').classList.add('active');
+        } else {
+            document.querySelector('#scroll-top').classList.remove('active');
+        }
+    });
+});
+
+
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Jigar Sable";
-            $("#favicon").attr("href", "/assets/images/favicon.png");
+            document.title = "Projects | Portfolio keshav jha";
+            $("#keshav").attr("href", "/assets/images/keshav.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "/assets/images/favhand.png");
+            $("#keshav").attr("href", "/assets/images/favhand.png");
         }
     });
 

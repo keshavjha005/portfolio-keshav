@@ -1,76 +1,155 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  outline: none; border: none;
-  text-transform:capitalize;
-  transition: all .2s linear;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
-html{
+html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-body{
-  background: #f7f7f7;
-  font-family: 'Poppins', sans-serif;
-
+body {
+  
+  font-family: "Poppins", sans-serif;
+  background-image: radial-gradient(circle, #645c60, #7b757a, #938f95, #acaab0, #c6c6cc, #cdd2da, #d2dee8, #d6ebf3, #c8ebeb, #c4eada, #cde5c4, #e1ddb0);
 }
 
-*::selection{
+*::selection {
   background: #2b3dda;
   color: #fff;
 }
 
-html{
+html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-html::-webkit-scrollbar{
-  width: .8rem;
+html::-webkit-scrollbar {
+  width: 0.8rem;
 }
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
   background: rgb(235, 202, 245);
 }
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
   background: #420177;
 }
 
-/* navbar starts */
-header{
+/* pre loader start */
+.loader-container {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #e6eff1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.loader-container.fade-out {
+  top: -120%;
+}
+/* pre loader end */
+
+
+
+
+/* dark mode */
+/* Add the initial (light mode) styles */
+body {
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+header {
+  background-color: #fff;
+}
+
+header.dark-mode {
+  background-color: #333;
+}
+
+header .navbar ul li a {
+  color: #0E2431;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: #011aff;
+  border-bottom: .2rem solid #011aff;
+}
+
+body.dark-mode header .navbar ul li a {
+  color: #f1f1f1;
+}
+
+body.dark-mode header .navbar ul li a.active,
+body.dark-mode header .navbar ul li a:hover {
+  color: #66c7ff;
+  border-bottom: .2rem solid #66c7ff;
+}
+
+#dark-mode-toggle {
+  cursor: pointer;
+  font-size: 5rem;
+  color: #333;
+}
+
+body.dark-mode #dark-mode-toggle {
+  color: #f1f1f1;
+}
+
+
+
+
+/* navbar starts */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146,161,176,.3);
+  background-color: #a0b573;
+  background-image: radial-gradient(circle, #b7a49f, #c3b0b1, #ccbdc2, #d4cbd3, #dcd9e1, #dbdee9, #d9e5f0, #d6ebf3, #c8ebeb, #c4eada, #cde5c4, #e1ddb0);
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
-section{
+section {
   min-height: 100vh;
   padding: 2rem 9%;
 }
-.heading{
+.heading {
   font-size: 3.5rem;
-  color: rgb(20, 20, 20);
+  color: rgb(32, 32, 32);
   font-weight: 800;
   text-align: center;
 }
-.heading span{
+.heading span {
   color: rgb(115, 3, 167);
 }
-header .logo{
+header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0E2431;
+  color: #2b5066;
 }
 header .logo i {
   font-size: 2.2rem;
@@ -78,27 +157,28 @@ header .logo i {
 header .logo:hover {
   color: #fc8c05;
 }
-header .navbar ul{
+header .navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .navbar li{
+header .navbar li {
   margin-left: 2.5rem;
 }
-header .navbar ul li a{
+header .navbar ul li a {
   font-size: 1.57rem;
-  color: #0E2431;
+  color: #2004f2;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
+  transition: 0.2s;
 }
 header .navbar ul li a.active,
-header .navbar ul li a:hover{
-  color: #011aff;
-  border-bottom: .2rem solid #011aff;
-  padding: .5rem 0;
+header .navbar ul li a:hover {
+  color: #0515f5;
+  border-bottom: 0.2rem solid #7c82b9;
+  padding: 0.5rem 0;
 }
 /* navbar ends */
 
