@@ -17,8 +17,8 @@
     "image": "resumegen",
     "category": "mern",
     "links": {
-      "view": "https://resumegenx",
-      "code": "https://github.com/keshavjha005/Resume-Gen/tree/main"
+      "view": "https://resume-generator-keshavjha005s-projects.vercel.app/",
+      "code": "https://resume-generator-keshavjha005s-projects.vercel.app/"
     }
   }, 
  
@@ -66,7 +66,7 @@
   },
   {
     "name": "Connex India",
-    "desc": "Portfolio built using HTML, CSS, Bootstrap, SASS and JavaScript. Customized Bootstrap using SCSS.",
+    "desc": "",
     "image": "connex",
     "category": "basicweb",
     "links": {
@@ -95,13 +95,13 @@
     }
   },
   {
-    "name": "Food Website",
-    "desc": "Basic food website landing page built using HTML, CSS, SASS, Bootstrap and jQuery.",
+    "name": "Facebook UI",
+    "desc": "Basic Ui oF Facebook built using Reactjs, SASS, Bootstrap and jQuery.",
     "image": "foodwebsite",
     "category": "basicweb",
     "links": {
-      "view": "#",
-      "code": "#"
+      "view": "https://facebook-clone-ui-git-main-keshavjha005s-projects.vercel.app/",
+      "code": "https://facebook-clone-ui-git-main-keshavjha005s-projects.vercel.app/"
     }
   },
   {
