@@ -11,6 +11,20 @@
       "code": "https://github.com/keshavjha005/flipkart-Mern"
     }
   },
+
+
+  {
+    "name": "Grocery store",
+    "desc": "Full-stack Grocery store Application! This is a user-friendly and easy-to-use landing page built with React, Material UI, and Tailwind CSS.",
+    "image": "grocery",
+    "category": "mern",
+    "links": {
+      "view": "https://grocery-keshavjha005s-projects.vercel.app/",
+      "code": "https://github.com/keshavjha005/Grocery"
+    }
+  }, 
+
+
   {
     "name": "ResumeGen",
     "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
@@ -24,7 +38,7 @@
  
   {
     "name": "coding club Bce",
-    "desc": "Crypto Tracker built using ReactJS and Chakra UI. Supports dark mode. API used coingecko.",
+    "desc": "This is coding club website of BCE, built using NextJS and tailwindCSS. API used TMDB, deployed on vercel.",
     "image": "coding club",
     "category": "mern",
     "links": {
@@ -44,7 +58,7 @@
   },
   {
     "name": "Invoice Generator",
-    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "desc": "ReactJS Invoice Generator which will generate customized invoice in few minutes on your requirements.",
     "image": "invoice",
     "category": "basicweb",
     "links": {
@@ -56,7 +70,7 @@
   
   {
     "name": "Weather check",
-    "desc": "Basic Banking System based on PHP and MySQL database. Made with HTML, CSS, JavaScript and backend with PHP.",
+    "desc": "Weather check is a web app that shows the weather of any city in the world. It uses the OpenWeatherMap API to fetch the weather data.",
     "image": "wheather",
     "category": "lamp",
     "links": {
@@ -66,7 +80,7 @@
   },
   {
     "name": "Connex India",
-    "desc": "",
+    "desc": "website i made for my client, built using ReactJS and tailwindCSS. API used TMDB, deployed on vercel.",
     "image": "connex",
     "category": "basicweb",
     "links": {
