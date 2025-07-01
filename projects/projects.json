@@ -38,25 +38,16 @@
       "code": "https://github.com/keshavjha005/Grocery"
     }
   }, 
-{
-    "name": "Infine ",
-"desc": "A web app for showcasing personal brand, serving 500+ daily active users. It helps clients grow their business quickly, ensuring dynamic updates and improving user experience and engagement by 20%.",
-"image": "Infine",
+
+
+   {
+    "name": "Infine",
+    "desc": "A web app for showcasing personal brand, serving 500+ daily active users. It helps clients grow their business quickly, ensuring dynamic updates and improving user experience and engagement by 20%.",
+    "image": "infine",
     "category": "mern",
     "links": {
       "view": "https://lexend-nextjs.vercel.app/",
       "code": "https://github.com/keshavjha005/Lexend-web"
-    }
-  },
-
-   {
-    "name": "Infine",
-    "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
-    "image": "Infine",
-    "category": "mern",
-    "links": {
-      "view": "https://resume-generator-keshavjha005s-projects.vercel.app/",
-      "code": "https://resume-generator-keshavjha005s-projects.vercel.app/"
     }
   }, 
 
