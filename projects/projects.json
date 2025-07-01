@@ -14,7 +14,7 @@
 {
     "name": "Infine ",
 "desc": "A web app for showcasing personal brand, serving 500+ daily active users. It helps clients grow their business quickly, ensuring dynamic updates and improving user experience and engagement by 20%.",
-"image": "Infine",
+"image": "/images/infine.png",
     "category": "mern",
     "links": {
       "view": "https://lexend-nextjs.vercel.app/",
