@@ -49,6 +49,16 @@
     }
   },
 
+   {
+    "name": "Infine",
+    "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
+    "image": "Infine",
+    "category": "mern",
+    "links": {
+      "view": "https://resume-generator-keshavjha005s-projects.vercel.app/",
+      "code": "https://resume-generator-keshavjha005s-projects.vercel.app/"
+    }
+  }, 
 
   {
     "name": "ResumeGen",
