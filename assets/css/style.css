@@ -978,7 +978,7 @@ header .navbar ul li a:hover {
   height: 25px;
   right: -17px;
 
-  background-image: radial-gradient(circle, #5c594d, #62685d, #69766f, #748382, #839094, #8c9ba2, #96a6b0, #a1b1bf, #a2bfce, #a1ceda, #a2dde2, #a7ebe6);
+  background-image: linear-gradient(to top, #bbbfb9, #b4b7b2, #adafab, #a6a8a4, #9fa09d);
   border: 4px solid #b8a89b;
   top: 15px;
   border-radius: 50%;
