@@ -12,7 +12,7 @@
   },
 
 {
-    "name": "InFine ",
+    "name": "Infine ",
 "desc": "A web app for showcasing personal brand, serving 500+ daily active users. It helps clients grow their business quickly, ensuring dynamic updates and improving user experience and engagement by 20%.",
 "image": "InFine",
     "category": "mern",
@@ -123,46 +123,7 @@
       "code": "https://github.com/keshavjha005/Pintrest-clone"
     }
   },
-  {
-    "name": "JavaScript Issue Tracker",
-    "desc": "It provides the feature to Assign Issue With The Auto Generated Id By Using ChanceJS. Uses Local Storage.",
-    "image": "issuetrack",
-    "category": "basicweb",
-    "links": {
-      "view": "https://shorturl.at/jB5EI",
-      "code": "hhttps://github.com/keshavjha005/js-issue-tracker"
-    }
-  },
-  {
-    "name": "Facebook UI",
-    "desc": "Basic Ui oF Facebook built using Reactjs, SASS, Bootstrap and jQuery.",
-    "image": "foodwebsite",
-    "category": "basicweb",
-    "links": {
-      "view": "https://facebook-clone-ui-git-main-keshavjha005s-projects.vercel.app/",
-      "code": "https://facebook-clone-ui-git-main-keshavjha005s-projects.vercel.app/"
-    }
-  },
-  {
-    "name": "WebChat Website",
-    "desc": "It's a web based chat app made using popular javaScript library Socket IO. Allows multiple users to connect.",
-    "image": "webchat",
-    "category": "mern",
-    "links": {
-      "view": "https://github.com/jigar-sable/WebChat#webchat",
-      "code": "https://github.com/jigar-sable/WebChat"
-    }
-  },
-  {
-    "name": "Basic Banking App",
-    "desc": "It's an android app which uses SQLite to store user accounts data. It provides feature to simply transact amount.",
-    "image": "basicbank",
-    "category": "android",
-    "links": {
-      "view": "https://github.com/jigar-sable/Basic_Banking_App#basic-banking-app",
-      "code": "https://github.com/jigar-sable/Basic_Banking_App"
-    }
-  },
+
   
   
   {
