@@ -1,5 +1,30 @@
 [
   
+{
+    "name": "Lexend Web",
+"desc": "A MERN stack Web app for easy project management of any complexity with an Admin Dashboard that supports 1,000+ users.",
+"image": "Lexend",
+    "category": "mern",
+    "links": {
+      "view": "https://lexend-nextjs.vercel.app/",
+      "code": "https://github.com/keshavjha005/Lexend-web"
+    }
+  },
+
+{
+    "name": "InFine ",
+"desc": "A web app for showcasing personal brand, serving 500+ daily active users. It helps clients grow their business quickly, ensuring dynamic updates and improving user experience and engagement by 20%.",
+"image": "InFine",
+    "category": "mern",
+    "links": {
+      "view": "https://lexend-nextjs.vercel.app/",
+      "code": "https://github.com/keshavjha005/Lexend-web"
+    }
+  },
+
+
+
+
 
   {
     "name": "Flipkart MERN",
