@@ -12,7 +12,16 @@
   },
 
 
-
+ {
+    "name": "Infine",
+    "desc": "A web app for showcasing personal brand, serving 500+ daily active users. It helps clients grow their business quickly.",
+    "image": "infine",
+    "category": "mern",
+    "links": {
+      "view": "https://lexend-nextjs.vercel.app/",
+      "code": "https://github.com/keshavjha005/Lexend-web"
+    }
+  }, 
 
 
 
@@ -40,16 +49,7 @@
   }, 
 
 
-   {
-    "name": "Infine",
-    "desc": "A web app for showcasing personal brand, serving 500+ daily active users. It helps clients grow their business quickly.",
-    "image": "infine",
-    "category": "mern",
-    "links": {
-      "view": "https://lexend-nextjs.vercel.app/",
-      "code": "https://github.com/keshavjha005/Lexend-web"
-    }
-  }, 
+  
 
   {
     "name": "ResumeGen",
